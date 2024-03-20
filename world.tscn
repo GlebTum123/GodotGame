@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1jiarq7p20jt"]
+
+[ext_resource type="Script" path="res://new_script.gd" id="1_kmj6i"]
+[ext_resource type="Texture2D" uid="uid://nk4k0hm22kll" path="res://pixil-frame-0.png" id="2_dm0hy"]
+
+[node name="World" type="Node"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_kmj6i")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(684, 344)
+scale = Vector2(9.96778, 11.6978)
+texture = ExtResource("2_dm0hy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
